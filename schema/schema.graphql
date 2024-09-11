@@ -1,0 +1,23 @@
+type Locale {
+  code: LocaleTypes!
+  name: String!
+}
+
+type Translation {
+  id: ID!
+  word: String!
+  translation: String!
+  phonetic: String!
+  description: String
+}
+
+type Query {
+  locale(code: LocaleTypes!): Locale
+  translation(id: ID!, from: LocaleTypes!, to: LocaleTypes!): Translation
+}
+
+enum LocaleTypes {
+  en # English
+  ml # Malayalam
+  np # Nepali
+}

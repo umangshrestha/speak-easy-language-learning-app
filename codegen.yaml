@@ -1,0 +1,7 @@
+schema: 'schema/schema.graphql' # Path to your GraphQL schema file or endpoint
+documents: '' # Path to your GraphQL queries/mutations (if you have any)
+generates:
+  src/lib/server/graphql/types.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-resolvers'

@@ -1,26 +1,61 @@
 {
-  "name": "nextjs-blog",
+  "name": "speak-easy-language-learning-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "codegen": "graphql-codegen --config codegen.yaml",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "@as-integrations/next": "^3.1.0",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@mui/material": "^6.0.2",
+    "@next/mdx": "^14.2.9",
+    "@types/mdx": "^2.0.13",
+    "graphql": "^16.9.0",
+    "graphql-tag": "^2.12.6",
+    "gray-matter": "^4.0.3",
+    "next": "14.2.9",
+    "npm": "^10.8.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.9"
+    "react-icons": "^5.3.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@chromatic-com/storybook": "^1.9.0",
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/typescript": "^4.0.9",
+    "@graphql-codegen/typescript-resolvers": "^4.2.1",
+    "@storybook/addon-essentials": "^8.3.0",
+    "@storybook/addon-interactions": "^8.3.0",
+    "@storybook/addon-links": "^8.3.0",
+    "@storybook/addon-onboarding": "^8.3.0",
+    "@storybook/blocks": "^8.3.0",
+    "@storybook/nextjs": "^8.3.0",
+    "@storybook/react": "^8.3.0",
+    "@storybook/test": "^8.3.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.9"
+    "eslint-config-next": "14.2.9",
+    "eslint-plugin-storybook": "^0.8.0",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "storybook": "^8.3.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.0"
   }
 }
