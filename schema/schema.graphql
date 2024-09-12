@@ -8,7 +8,6 @@ type Translation {
   word: String!
   translation: String!
   phonetic: String!
-  description: String
 }
 
 type Query {
@@ -20,4 +19,5 @@ enum LocaleTypes {
   en # English
   ml # Malayalam
   np # Nepali
+  hi # Hindi
 }

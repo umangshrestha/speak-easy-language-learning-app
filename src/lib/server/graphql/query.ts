@@ -1,18 +1,11 @@
-import { LocaleTypes, QueryResolvers } from './types';
+import { LocaleTypes, QueryResolvers } from './__generated__/types';
 
 export default {
   locale: (_, args) => {
     const code = args.code;
-    const locales: Record<string, string> = {
-      en: 'English',
-      ml: 'Malayalam',
-      np: 'Nepali',
-    } as const;
-    if (!locales[code]) return null;
-
     return {
       code,
-      name: locales[code],
+      name: '',
     };
   },
   translation: (_, args) => {
@@ -34,4 +27,4 @@ export default {
       description: '',
     };
   },
-} as QueryResolvers;
+} satisfies QueryResolvers;

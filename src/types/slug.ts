@@ -1,5 +1,5 @@
-export type SlugParams = {
+export type SlugParams = Readonly<{
   params: {
     slug: string;
   };
-};
+}>;
