@@ -18,6 +18,10 @@ export async function markdownToHtml(markdown: string) {
 export function getPostBySlug(slug: string) {
   const realSlug = slug.replace(/\.mdx?$/, '');
   const fullPath = path.join(PATH_TO_POSTS, `${realSlug}.mdx`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
-  return matter(fileContents);
+  try {
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    return matter(fileContents);
+  } catch (e) {
+    return null;
+  }
 }
