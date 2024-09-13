@@ -1,6 +1,5 @@
-[
-  {
-    "id": "NEPAL",
+{
+  "NEPAL": {
     "word": {
       "en": "Nepal",
       "ml": "നേപ്പാൽ",
@@ -34,8 +33,7 @@
       }
     }
   },
-  {
-    "id": "NEPALI",
+  "NEPALI": {
     "word": {
       "en": "Nepali",
       "ml": "നേപ്പാളി",
@@ -69,8 +67,7 @@
       }
     }
   },
-  {
-    "id": "INDIA",
+  "INDIA": {
     "word": {
       "en": "India",
       "ml": "ഇന്ത്യ",
@@ -104,8 +101,7 @@
       }
     }
   },
-  {
-    "id": "HINDI",
+  "HINDI": {
     "word": {
       "en": "Hindi",
       "ml": "ഹിന്ദി",
@@ -139,8 +135,41 @@
       }
     }
   },
-  {
-    "id": "ENGLISH",
+  "MALAYALAM": {
+    "word": {
+      "en": "Malayalam",
+      "ml": "മലയാളം",
+      "hi": "मलयालम",
+      "np": "मलयालम"
+    },
+    "phonetic": {
+      "en": {
+        "en": "ˌmæləˈjɑːləm",
+        "ml": "മലയാളം",
+        "hi": "मलयालम",
+        "np": "मलयालम"
+      },
+      "ml": {
+        "en": "malaayaalam",
+        "ml": "മലയാളം",
+        "hi": "मलयालम",
+        "np": "मलयालम"
+      },
+      "hi": {
+        "en": "malayaalam",
+        "ml": "മലയാളം",
+        "hi": "मलयालम",
+        "np": "मलयालम"
+      },
+      "np": {
+        "en": "malayaalam",
+        "ml": "മലയാളം",
+        "hi": "मलयालम",
+        "np": "मलयालम"
+      }
+    }
+  },
+  "ENGLISH": {
     "word": {
       "en": "English",
       "ml": "ഇംഗ്ലീഷ്",
@@ -174,8 +203,7 @@
       }
     }
   },
-  {
-    "id": "LANGUAGE",
+  "LANGUAGE": {
     "word": {
       "en": "Language",
       "ml": "ഭാഷ",
@@ -209,8 +237,7 @@
       }
     }
   },
-  {
-    "id": "LANGUAGES",
+  "LANGUAGES": {
     "word": {
       "en": "Languages",
       "ml": "ഭാഷകൾ",
@@ -244,8 +271,7 @@
       }
     }
   },
-  {
-    "id": "WORD",
+  "COUNTRY": {
     "word": {
       "en": "Word",
       "ml": "വാക്ക്",
@@ -279,8 +305,7 @@
       }
     }
   },
-  {
-    "id": "WORDS",
+  "WORD": {
     "word": {
       "en": "Words",
       "ml": "വാക്കുകൾ",
@@ -314,8 +339,7 @@
       }
     }
   },
-  {
-    "id": "MOTHER",
+  "MOTHER": {
     "word": {
       "en": "Mother",
       "ml": "അമ്മ",
@@ -349,8 +373,7 @@
       }
     }
   },
-  {
-    "id": "FATHER",
+  "FATHER": {
     "word": {
       "en": "Father",
       "ml": "അച്ഛൻ",
@@ -384,8 +407,7 @@
       }
     }
   },
-  {
-    "id": "PARENTS",
+  "PARENTS": {
     "word": {
       "en": "Parents",
       "ml": "മാതാപിതാക്കൾ",
@@ -419,4 +441,4 @@
       }
     }
   }
-]
+}

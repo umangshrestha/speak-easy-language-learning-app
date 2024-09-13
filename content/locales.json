@@ -1,0 +1,18 @@
+{
+  "en": {
+    "image": "public/images/flagdownload.com/Flag_of_United_States.svg",
+    "word_id": "ENGLISH"
+  },
+  "hi": {
+    "image": "/public/images/flagdownload.com/Flag_of_India.svg",
+    "word_id": "HINDI"
+  },
+  "np": {
+    "image": "/public/images/flagdownload.com/Flag_of_Nepal.svg",
+    "word_id": "NEPALI"
+  },
+  "ml": {
+    "image": "/public/images/flagdownload.com/Flag_of_India.svg",
+    "word_id": "MALAYALAM"
+  }
+}

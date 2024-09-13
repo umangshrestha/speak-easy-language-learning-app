@@ -33,16 +33,14 @@ export type Scalars = {
 
 export type Locale = {
   __typename?: 'Locale';
-  code: LocaleTypes;
+  code: LocaleType;
+  image: Scalars['String']['output'];
   name: Scalars['String']['output'];
 };
 
-export type LocaleNameArgs = {
-  code?: InputMaybe<LocaleTypes>;
-};
-
-export enum LocaleTypes {
+export enum LocaleType {
   En = 'en',
+  Hi = 'hi',
   Ml = 'ml',
   Np = 'np',
 }
@@ -50,22 +48,33 @@ export enum LocaleTypes {
 export type Query = {
   __typename?: 'Query';
   locale?: Maybe<Locale>;
+  locales?: Maybe<Array<Maybe<Locale>>>;
   translation?: Maybe<Translation>;
+  translations?: Maybe<Array<Maybe<Translation>>>;
 };
 
 export type QueryLocaleArgs = {
-  code: LocaleTypes;
+  code: LocaleType;
+};
+
+export type QueryLocalesArgs = {
+  code?: InputMaybe<Array<LocaleType>>;
 };
 
 export type QueryTranslationArgs = {
-  from: LocaleTypes;
+  from: LocaleType;
   id: Scalars['ID']['input'];
-  to: LocaleTypes;
+  to: LocaleType;
+};
+
+export type QueryTranslationsArgs = {
+  from: LocaleType;
+  to: LocaleType;
+  word: Scalars['String']['input'];
 };
 
 export type Translation = {
   __typename?: 'Translation';
-  description?: Maybe<Scalars['String']['output']>;
   id: Scalars['ID']['output'];
   phonetic: Scalars['String']['output'];
   translation: Scalars['String']['output'];
@@ -182,7 +191,7 @@ export type ResolversTypes = {
   Boolean: ResolverTypeWrapper<Scalars['Boolean']['output']>;
   ID: ResolverTypeWrapper<Scalars['ID']['output']>;
   Locale: ResolverTypeWrapper<Locale>;
-  LocaleTypes: LocaleTypes;
+  LocaleType: LocaleType;
   Query: ResolverTypeWrapper<{}>;
   String: ResolverTypeWrapper<Scalars['String']['output']>;
   Translation: ResolverTypeWrapper<Translation>;
@@ -203,13 +212,9 @@ export type LocaleResolvers<
   ParentType extends
     ResolversParentTypes['Locale'] = ResolversParentTypes['Locale'],
 > = {
-  code?: Resolver<ResolversTypes['LocaleTypes'], ParentType, ContextType>;
-  name?: Resolver<
-    ResolversTypes['String'],
-    ParentType,
-    ContextType,
-    Partial<LocaleNameArgs>
-  >;
+  code?: Resolver<ResolversTypes['LocaleType'], ParentType, ContextType>;
+  image?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -224,11 +229,23 @@ export type QueryResolvers<
     ContextType,
     RequireFields<QueryLocaleArgs, 'code'>
   >;
+  locales?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes['Locale']>>>,
+    ParentType,
+    ContextType,
+    Partial<QueryLocalesArgs>
+  >;
   translation?: Resolver<
     Maybe<ResolversTypes['Translation']>,
     ParentType,
     ContextType,
     RequireFields<QueryTranslationArgs, 'from' | 'id' | 'to'>
+  >;
+  translations?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes['Translation']>>>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryTranslationsArgs, 'from' | 'to' | 'word'>
   >;
 };
 
@@ -237,11 +254,6 @@ export type TranslationResolvers<
   ParentType extends
     ResolversParentTypes['Translation'] = ResolversParentTypes['Translation'],
 > = {
-  description?: Resolver<
-    Maybe<ResolversTypes['String']>,
-    ParentType,
-    ContextType
-  >;
   id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   phonetic?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   translation?: Resolver<ResolversTypes['String'], ParentType, ContextType>;

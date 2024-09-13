@@ -1,6 +1,7 @@
 type Locale {
-  code: LocaleTypes!
+  code: LocaleType!
   name: String!
+  image: String!
 }
 
 type Translation {
@@ -11,11 +12,13 @@ type Translation {
 }
 
 type Query {
-  locale(code: LocaleTypes!): Locale
-  translation(id: ID!, from: LocaleTypes!, to: LocaleTypes!): Translation
+  locale(code: LocaleType!): Locale
+  locales(code: [LocaleType!]): [Locale]
+  translation(id: ID!, from: LocaleType!, to: LocaleType!): Translation
+  translations(from: LocaleType!, to: LocaleType!): [Translation]
 }
 
-enum LocaleTypes {
+enum LocaleType {
   en # English
   ml # Malayalam
   np # Nepali

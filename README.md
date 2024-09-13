@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Credits
+
+The flag icons used in this project were sourced from [flagdownload.com](https://flagdownload.com/). I do not own these icons.
 
 ## Getting Started
 

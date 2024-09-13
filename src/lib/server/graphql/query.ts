@@ -1,30 +1,16 @@
-import { LocaleTypes, QueryResolvers } from './__generated__/types';
+import { QueryResolvers } from './__generated__/types';
 
 export default {
-  locale: (_, args) => {
-    const code = args.code;
-    return {
-      code,
-      name: '',
-    };
+  locale: (_, { code }, { dataSource }) => {
+    return dataSource.findOneLocale(code);
   },
-  translation: (_, args) => {
-    const translations: Record<LocaleTypes, string> = {
-      en: 'Mother',
-      ml: 'അമ്മ',
-      np: 'आमा',
-    } as const;
-    const phonetics: Record<LocaleTypes, string> = {
-      en: 'Muh-thur',
-      ml: 'Am-ma',
-      np: 'Aa-maa',
-    } as const;
-    return {
-      id: args.id,
-      word: translations[args.from],
-      translation: translations[args.to],
-      phonetic: phonetics[args.to],
-      description: '',
-    };
+  locales: (_, __, { dataSource }) => {
+    return dataSource.findManyLocales();
+  },
+  translation: (_, { id, from, to }, { dataSource }) => {
+    return dataSource.findOneTranslation(id, from, to);
+  },
+  translations: (_, { from, to }, { dataSource }) => {
+    return dataSource.findManyTranslations(from, to);
   },
 } satisfies QueryResolvers;
