@@ -1,0 +1,136 @@
+[
+    {
+        "id": "frog",
+        "image": "/src/assets/images/vecteezy.com/frog.svg",
+        "en-US": {
+            "text": "frog",
+            "transliteration": {
+                "ml-IN": "ഫ്രോഗ്",
+                "np-NP": "फ्रग"
+            }
+        },
+        "ml-IN": {
+            "text": "തവള",
+            "audio": "/src/assets/audio/narakeet.com/ml-IN/frog.mp3",
+            "transliteration": {
+                "en-US": "thavaḷa",
+                "np-NP": "तवल"
+            }
+        },
+        "np-NP": {
+            "text": "भ्यागुता",
+            "audio": "/src/assets/audio/narakeet.com/np-NP/frog.m4a",
+            "transliteration": {
+                "en-US": "bhyāgutā",
+                "ml-IN": "ഭ്യാഗുത"
+            }
+        }
+    },
+    {
+        "id": "green",
+        "image": "/src/assets/images/commons.wikimedia.org/green.svg",
+        "en-US": {
+            "text": "green",
+            "transliteration": {
+                "ml-IN": "ഗ്രീന്",
+                "np-NP": "ग्रिन"
+            }
+        },
+        "ml-IN": {
+            "text": "പച്ച",
+            "audio": "/src/assets/audio/narakeet.com/ml-IN/green.mp3",
+            "transliteration": {
+                "en-US": "paccha",
+                "np-NP": "पचा"
+            }
+        },
+        "np-NP": {
+            "text": "हरियो",
+            "audio": "/src/assets/audio/narakeet.com/np-NP/green.m4a",
+            "transliteration": {
+                "en-US": "hariyo",
+                "ml-IN": "ഹരിയോ"
+            }
+        }
+    },
+    {
+        "id": "green_frog",
+        "image": "/src/assets/images/vecteezy.com/frog.svg",
+        "en-US": {
+            "text": "green frog",
+            "transliteration": {
+                "ml-IN": "ഫ്രോഗ് പച്ച",
+                "np-NP": "ग्रिन फ्रग"
+            }
+        },
+        "ml-IN": {
+            "text": "പച്ച തവള",
+            "audio": "/src/assets/audio/narakeet.com/ml-IN/green_frog.m4a",
+            "transliteration": {
+                "en-US": "paccha thavaḷa",
+                "np-NP": "पचा भ्यागुता"
+            }
+        },
+        "np-NP": {
+            "text": "हरियो भ्यागुता",
+            "audio": "/src/assets/audio/narakeet.com/np-NP/green_frog.m4a",
+            "transliteration": {
+                "en-US": "hariyo bhyāgutā",
+                "ml-IN": "ഹരിയോ ഭ്യാഗുത"
+            }
+        }
+    },
+    {
+        "id": "leaf",
+        "image": "src/assets/images/iconpacks.net/leaf.svg",
+        "en-US": {
+            "text": "leaf",
+            "transliteration": {
+                "ml-IN": "ലീഫ്",
+                "np-NP": "लिफ"
+            }
+        },
+        "ml-IN": {
+            "text": "ഇല",
+            "audio": "/src/assets/audio/narakeet.com/ml-IN/leaf.m4a",
+            "transliteration": {
+                "en-US": "ila",
+                "np-NP": "इल"
+            }
+        },
+        "np-NP": {
+            "text": "पात",
+            "audio": "/src/assets/audio/narakeet.com/np-NP/leaf.m4a",
+            "transliteration": {
+                "en-US": "pāt",
+                "ml-IN": "പാത"
+            }
+        }
+    },
+    {
+        "id": "the_green_frog_is_sitting_on_top_of_a_leaf",
+        "image": "/src/assets/images/vecteezy.com/frog.svg",
+        "en-US": {
+            "text": "The green frog is sitting on top of a leaf.",
+            "transliteration": {
+                "ml-IN": "ദ ഗ്രീൻ ഫ്രോഗ് ഇസ് സിറ്റിംഗ് ഓൺ ടോപ്പ് ഓഫ് അ ലീഫ്",
+                "np-NP": "द ग्रिन फ्रग इस सिटिंग ओन टप ऑफ अ लीफ"
+            }
+        },
+        "ml-IN": {
+            "text": "പച്ച തവള ഒരു ഇലയുടെ മുകളിൽ ഇരിക്കുന്നു.",
+            "audio": "src/assets/audio/narakeet.com/ml-IN/the_green_frog_is_sitting_on_top_of_a_leaf.m4a",
+            "transliteration": {
+                "en-US": "paccha thavaḷa oru ilayuṭē mukaliḷ irikkunnu.",
+                "np-NP": "पचा तवल ओरु इलयुटे मुकलिल इरिक्कुन्नु"
+            }
+        },
+        "np-NP": {
+            "text": "हरियो भ्यागुता पातको माथि बसिरहेको छ",
+            "transliteration": {
+                "en-US": "hariyo bhyāgutā pātako māthi basirahēkō cha",
+                "ml-IN": "ഹരിയോ ഭ്യാഗുത പാതകോ മാഥി ബസിരഹേകോ ചcccccbgkecnlhjrlhlvrlblkidhluittbhvkkfnjugtc"
+            }
+        }
+    }
+]
